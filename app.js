@@ -174,3 +174,54 @@ paraFour.textContent = 'Beautiful and intriguing';
 const paraFive = document.querySelector('.paragraph-five');
 paraFive.textContent = 'Bloody and popcorn-worthy';
 
+// create a div without touching html
+const containerSix = document.createElement('div');
+containerSix.classList.add('container-six');
+console.log(containerSix);
+
+const sectionSix = document.createElement('h2');
+sectionSix.setAttribute('id', 'section-six');
+sectionSix.textContent = 'Lady Snowblood';
+console.log(sectionSix);
+
+const paraSix = document.createElement('p');
+paraSix.classList.add('paragraph-six');
+paraSix.textContent = 'Kill Bill before it was cool';
+console.log(paraSix);
+
+// ^at this point nothing has been added to the page^
+// must grab reference from html to append to page
+// need to append above to the body
+
+const body = document.querySelector('body');
+console.log(body);
+body.appendChild(containerSix);
+containerSix.appendChild(sectionSix);
+containerSix.appendChild(paraSix);
+
+// create another container
+const containerSeven = document.createElement('div');
+// add class
+containerSeven.classList.add('container-seven');
+console.log(containerSeven);
+
+// create another section
+const sectionSeven = document.createElement('h2');  
+// add an id
+sectionSeven.setAttribute('id', 'section-seven');
+   // add textContent
+sectionSeven.textContent = 'Yojimbo';
+console.log(sectionSeven);  
+// create another paragraph
+const paraSeven = document.createElement('p');
+    // add a class
+paraSeven.classList.add('paragraph-seven');    
+    // add textContent
+paraSeven.textContent = 'Classic that started the cliches';
+
+// append the container to the body
+body.appendChild(containerSeven);
+// append section to the container
+containerSeven.appendChild(sectionSeven);
+// append the paragraph to the container
+containerSeven.appendChild(paraSeven);
