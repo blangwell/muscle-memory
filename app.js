@@ -158,3 +158,19 @@ sectionTwo.textContent = 'Hara Kiri: Death of a Samurai';
 sectionThree.textContent = 'Twilight Samurai';
 sectionFour.textContent = 'Roshamon';
 sectionFive.textContent = 'Lone Wolf and Cub';
+
+const paraOne = document.querySelector('.paragraph-one');
+paraOne.textContent = 'And a blurb about each one.';
+
+const paraTwo = document.querySelector('.paragraph-two');
+paraTwo.textContent = 'Sad and paternal';
+
+const paraThree = document.querySelector('.paragraph-three');
+paraThree.textContent = 'Riveting and romantic';
+
+const paraFour = document.querySelector('.paragraph-four');
+paraFour.textContent = 'Beautiful and intriguing';
+
+const paraFive = document.querySelector('.paragraph-five');
+paraFive.textContent = 'Bloody and popcorn-worthy';
+
