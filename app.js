@@ -14,7 +14,7 @@ console.log(myArray);
 const myBoolean = false;
 console.log(myBoolean);
 
-const myObject = {name: 'Barent', age: 30, colors: ['green', 'blue', 'black'], anxious: true};
+const myObject = {name: 'Barent', age: 30, colors: ['green', 'blue', 'black', 'purple'], anxious: true};
 console.log(myObject);
 
 let myString2 = 'this is my second string';
@@ -36,6 +36,52 @@ let myObject2 = {
 // one passes object
 // one passes boolean
 // then freestyle
+function displayColors(array){
+    let result = [];
+
+    for (let i = 0; i < array.length; i++){
+        let color = array[i];
+
+        if (color.length > 4){
+            result.push(color);
+        }
+    }
+    return result;
+};
+console.log(displayColors(myObject.colors));
+
+
+function removeFromArray(callback, array){
+    let result = callback(array)[0];
+    console.log(result);
+};
+
+removeFromArray(displayColors, myObject.colors);
+
+function printSentence(string){
+    console.log(string);
+    return 
+};
+
+printSentence(myString);
+printSentence(myString2);
+
+
+function printArray(object){
+    console.log(object.colors);
+};
+printArray(myObject);
+
+function doesThisReallyWork(boolean){
+    if (boolean){
+        console.log('this works')
+    }else{ 
+        console.log('this does not work')
+    }
+};
+
+doesThisReallyWork(myBoolean);
+
 
 function anArray(array){
     console.log(array[0]);
@@ -90,3 +136,25 @@ function booleanPass2(bool){
     }
 };
 
+const sectionOne = document.getElementById('section-one');
+console.log(sectionOne);
+
+const sectionTwo = document.getElementById('section-two');
+console.log(sectionTwo);
+
+const sectionThree = document.querySelector('#section-three');
+console.log(sectionThree); // when using querySelector you must include css selector #,.
+
+const sectionFour = document.querySelector('#section-four');
+console.log(sectionFour);
+
+const sectionFive = document.querySelector('#section-five');
+console.log(sectionFive);
+
+// innerHTML can get u hacked, textContent is preferable
+sectionOne.textContent = 'Japanes Films:';
+
+sectionTwo.textContent = 'Hara Kiri: Death of a Samurai';
+sectionThree.textContent = 'Twilight Samurai';
+sectionFour.textContent = 'Roshamon';
+sectionFive.textContent = 'Lone Wolf and Cub';
