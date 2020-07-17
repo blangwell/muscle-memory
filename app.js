@@ -152,7 +152,7 @@ const sectionFive = document.querySelector('#section-five');
 console.log(sectionFive);
 
 // innerHTML can get u hacked, textContent is preferable
-sectionOne.textContent = 'Japanes Films:';
+sectionOne.textContent = 'Japanese Films:';
 
 sectionTwo.textContent = 'Hara Kiri: Death of a Samurai';
 sectionThree.textContent = 'Twilight Samurai';
