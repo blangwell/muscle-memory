@@ -3,10 +3,19 @@
 // object(4 key value pairs) string, number, array, boolean
 
 const myString = 'Hello this is my string!';
+console.log(myString);
+
 const myNum = 25000;
+console.log(myNum);
+
 const myArray = [1, 'b', 9, true, 'false'];
+console.log(myArray);
+
 const myBoolean = false;
+console.log(myBoolean);
+
 const myObject = {name: 'Barent', age: 30, colors: ['green', 'blue', 'black'], anxious: true};
+console.log(myObject);
 
 let myString2 = 'this is my second string';
 let myNum2 = 3930;
